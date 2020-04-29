@@ -18,7 +18,16 @@ public class ExampleTest {
 
     @Test
     public void addTwoandTwo() {
-        System.out.println("Test 2 + 2");
         assertTrue("add(2,2) equals 4", ExampleClass.add(2, 2) == 4.0);
+    }
+
+    @Test
+    public void subtractTwoandTwo() {
+        assertTrue("subtract(2,2) equals 0", ExampleClass.subtract(2, 2) == 0.0);
+    }
+
+    @Test
+    public void addFail() {
+        assertTrue("add(2,3) equals 4", ExampleClass.wrongAdd(2, 2) == 4.0);
     }
 }
